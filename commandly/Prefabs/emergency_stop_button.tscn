@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://brrc36wh2c07n"]
+
+[ext_resource type="StyleBox" uid="uid://bbga7q7oxglg3" path="res://Styles/button_hover.tres" id="1_2c4ni"]
+[ext_resource type="StyleBox" uid="uid://crnfaksu1t7af" path="res://Styles/button_pressed.tres" id="2_bb6xo"]
+[ext_resource type="StyleBox" uid="uid://b1d1j2pte63d0" path="res://Styles/button_normal.tres" id="3_j7thx"]
+[ext_resource type="Script" uid="uid://drqv4r104t46c" path="res://Scripts/UI/EmergencyStopButton.cs" id="4_r4bmu"]
+
+[node name="EmergencyStopButtonContainer" type="MarginContainer"]
+size_flags_vertical = 8
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 30
+
+[node name="EmergencyStopButton" type="Button" parent="."]
+custom_minimum_size = Vector2(125, 60)
+layout_mode = 2
+tooltip_text = "Start a Capture"
+theme_override_styles/hover = ExtResource("1_2c4ni")
+theme_override_styles/pressed = ExtResource("2_bb6xo")
+theme_override_styles/normal = ExtResource("3_j7thx")
+text = "Emergency Stop"
+icon_alignment = 1
+script = ExtResource("4_r4bmu")

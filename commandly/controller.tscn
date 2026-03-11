@@ -1,0 +1,952 @@
+[gd_scene load_steps=47 format=3 uid="uid://c08f46fes4lrd"]
+
+[ext_resource type="Script" uid="uid://cplfjm0em6nqc" path="res://Scripts/ROS/ROSManager.cs" id="1_lykju"]
+[ext_resource type="Script" uid="uid://baygyt8ak6pni" path="res://Scripts/ROS/Publishers/JoystickPublisher.cs" id="2_x8bqg"]
+[ext_resource type="Script" uid="uid://dol6ne8u7md33" path="res://Scripts/ROS/Subscribers/RobotStateSubscriber.cs" id="3_45br6"]
+[ext_resource type="Script" uid="uid://cmgm0sqep6e8b" path="res://Scripts/UI/Camera.cs" id="3_t0p6e"]
+[ext_resource type="Script" uid="uid://cythfb4sk4g50" path="res://Scripts/ROS/Subscribers/CameraStateSubscriber.cs" id="4_nqq3h"]
+[ext_resource type="Script" uid="uid://bhjt2j5rlo8uj" path="res://Scripts/ROS/Subscribers/JoyPrioritySubscriber.cs" id="5_bcmiy"]
+[ext_resource type="Script" uid="uid://bblagyki8j74x" path="res://Scripts/ROS/Subscribers/CameraSubscriber.cs" id="6_flx6h"]
+[ext_resource type="Script" uid="uid://cf8e8olm3js67" path="res://Scripts/UI/FormatButton.cs" id="6_kt4gu"]
+[ext_resource type="Script" uid="uid://bg754825acnuc" path="res://Scripts/ROS/Services/SdFormatterService.cs" id="7_hr6sm"]
+[ext_resource type="Script" uid="uid://bcyfpfdxc55qb" path="res://Scripts/PAL/PALControl.cs" id="7_xsijp"]
+[ext_resource type="Script" uid="uid://dhb2o76pw5t6w" path="res://Scripts/ROS/Services/CaptureTypeService.cs" id="8_4yhov"]
+[ext_resource type="Script" uid="uid://c1i60tvugd0j1" path="res://Scripts/ROS/Services/SetShutterService.cs" id="9_h2v44"]
+[ext_resource type="Script" uid="uid://c3jao434ilaf8" path="res://Scripts/ROS/Services/CaptureService.cs" id="10_1dv1d"]
+[ext_resource type="Script" uid="uid://xq6wmctw80d7" path="res://Scripts/ROS/Services/SetDriveModeService.cs" id="11_lykju"]
+[ext_resource type="Script" uid="uid://biq5ukrp3ywfa" path="res://Scripts/ROS/Services/SetIsoService.cs" id="12_x8bqg"]
+[ext_resource type="Script" uid="uid://dwqm3q3hb3imo" path="res://Scripts/ROS/Subscribers/SlamMapSubscriber.cs" id="13_45br6"]
+[ext_resource type="Script" uid="uid://qq5rc0tdfld0" path="res://Scripts/UI/MenuTabContainer.cs" id="13_si4l1"]
+[ext_resource type="Script" uid="uid://bvte8ppyo8o7a" path="res://Scripts/ROS/Subscribers/CapturePoseSubscriber.cs" id="14_nqq3h"]
+[ext_resource type="Script" uid="uid://dfffwlcsk3j2f" path="res://Scripts/ROS/Subscribers/RobotPoseSubscriber.cs" id="15_x8bqg"]
+[ext_resource type="Script" uid="uid://djhi82mkhwgnk" path="res://Scripts/ROS/Services/SendCapturePoseService.cs" id="16_flx6h"]
+[ext_resource type="Script" uid="uid://cu3i8lwhw4sky" path="res://Scripts/UI/CameraReadyIcon.cs" id="18_ybt2s"]
+[ext_resource type="Script" uid="uid://bn7j5rntm4bkf" path="res://Scripts/UI/AutonomousIcon.cs" id="20_8h2ts"]
+[ext_resource type="Texture2D" uid="uid://bfi63562ehw27" path="res://Images/on.png" id="20_nx8g6"]
+[ext_resource type="StyleBox" uid="uid://crnfaksu1t7af" path="res://Styles/button_pressed.tres" id="21_w5tkc"]
+[ext_resource type="StyleBox" uid="uid://bbga7q7oxglg3" path="res://Styles/button_hover.tres" id="21_ymejs"]
+[ext_resource type="Script" uid="uid://udkgk4ol6hes" path="res://Scripts/UI/CaptureIcon.cs" id="22_0flu2"]
+[ext_resource type="StyleBox" uid="uid://b1d1j2pte63d0" path="res://Styles/button_normal.tres" id="23_8h2ts"]
+[ext_resource type="Texture2D" uid="uid://ca8ppj5nn1smh" path="res://Images/off.png" id="23_si4l1"]
+[ext_resource type="Texture2D" uid="uid://c7np8wnm8qe4p" path="res://Images/connecting.png" id="24_wsbyy"]
+[ext_resource type="Script" uid="uid://b4cigqbvvbibn" path="res://Scripts/UI/ApproxImages.cs" id="25_u8mou"]
+[ext_resource type="Script" uid="uid://bolo37st22vo4" path="res://Scripts/UI/ReconnectPanel.cs" id="27_qffim"]
+[ext_resource type="Script" uid="uid://b0oprvtsf7jb8" path="res://Scripts/UI/RestartRobotButton.cs" id="27_wsbyy"]
+[ext_resource type="PackedScene" uid="uid://ckji8bn1cy7b6" path="res://Prefabs/slam_map_container.tscn" id="29_jhqyr"]
+[ext_resource type="Script" uid="uid://lremhnhgqrvd" path="res://Scripts/UI/CaptureDropdown.cs" id="29_wsbyy"]
+[ext_resource type="Script" uid="uid://cd4wkp77e5gtw" path="res://Scripts/UI/CaptureButton.cs" id="30_cvsls"]
+[ext_resource type="Texture2D" uid="uid://ct48s6ojb2c5n" path="res://Textures/camera_texture.tres" id="31_45br6"]
+[ext_resource type="Script" uid="uid://bedumk74gs2fj" path="res://Scripts/UI/ShutterDropdown.cs" id="32_m4u6l"]
+[ext_resource type="Script" uid="uid://8e8esfylakd7" path="res://Scripts/UI/IsoDropdown.cs" id="33_jhqyr"]
+[ext_resource type="Script" uid="uid://dtj1ko0xnes41" path="res://Scripts/UI/DriveModeDropdown.cs" id="34_jhqyr"]
+[ext_resource type="Script" uid="uid://n56qyos1eoa" path="res://Scripts/UI/Config.cs" id="35_lykju"]
+[ext_resource type="Script" uid="uid://dg203715idl2p" path="res://Scripts/UI/StartMappingButton.cs" id="41_x8bqg"]
+[ext_resource type="PackedScene" uid="uid://brrc36wh2c07n" path="res://Prefabs/emergency_stop_button.tscn" id="43_nqq3h"]
+[ext_resource type="Script" uid="uid://chqxs70pfvrju" path="res://Scripts/UI/Confirmation.cs" id="43_x8bqg"]
+
+[sub_resource type="Theme" id="Theme_khjfe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_si4l1"]
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_kt4gu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ROSControl" type="Node" parent="."]
+script = ExtResource("1_lykju")
+
+[node name="JoystickPublisher" type="Node" parent="ROSControl"]
+script = ExtResource("2_x8bqg")
+
+[node name="RobotStateSubscriber" type="Node" parent="ROSControl" node_paths=PackedStringArray("confirmationPanel")]
+script = ExtResource("3_45br6")
+confirmationPanel = NodePath("../../Panel/GenericConfirmation")
+errorDialogue = "There was an error.
+
+Do you want to restart the robot?"
+
+[node name="CameraStateSubscriber" type="Node" parent="ROSControl"]
+script = ExtResource("4_nqq3h")
+
+[node name="JoyPrioritySubscriber" type="Node" parent="ROSControl"]
+script = ExtResource("5_bcmiy")
+
+[node name="CameraSubscriber" type="Node" parent="ROSControl"]
+script = ExtResource("6_flx6h")
+
+[node name="SDFormatterService" type="Node" parent="ROSControl"]
+script = ExtResource("7_hr6sm")
+
+[node name="CaptureTypeService" type="Node" parent="ROSControl"]
+script = ExtResource("8_4yhov")
+
+[node name="SetShutterService" type="Node" parent="ROSControl"]
+script = ExtResource("9_h2v44")
+
+[node name="CaptureService" type="Node" parent="ROSControl"]
+script = ExtResource("10_1dv1d")
+
+[node name="SetDriveModeService" type="Node" parent="ROSControl"]
+script = ExtResource("11_lykju")
+
+[node name="SetIsoService" type="Node" parent="ROSControl"]
+script = ExtResource("12_x8bqg")
+
+[node name="SlamMapSubscriber" type="Node" parent="ROSControl"]
+script = ExtResource("13_45br6")
+
+[node name="CapturePoseSubscriber" type="Node" parent="ROSControl"]
+script = ExtResource("14_nqq3h")
+
+[node name="RobotPoseSubscriber" type="Node" parent="ROSControl"]
+script = ExtResource("15_x8bqg")
+
+[node name="SendCapturePoseService" type="Node" parent="ROSControl"]
+script = ExtResource("16_flx6h")
+
+[node name="PALControl" type="Node" parent="."]
+script = ExtResource("7_xsijp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_khjfe")
+
+[node name="TabContainer" type="TabContainer" parent="Panel" node_paths=PackedStringArray("configFirstFocus", "sensorFirstFocus")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 0
+script = ExtResource("13_si4l1")
+configFirstFocus = NodePath("Config")
+sensorFirstFocus = NodePath("Sensors")
+
+[node name="Sensors" type="PanelContainer" parent="Panel/TabContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("HBoxContainer/MonitorsAndControls/CaptureButtonContainer/CaptureButton")
+focus_next = NodePath("HBoxContainer/MonitorsAndControls/CaptureButtonContainer/CaptureButton")
+metadata/_tab_index = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/Sensors"]
+layout_mode = 2
+
+[node name="MonitorsAndControls" type="VBoxContainer" parent="Panel/TabContainer/Sensors/HBoxContainer"]
+layout_mode = 2
+
+[node name="Drive" type="HBoxContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls" node_paths=PackedStringArray("status")]
+layout_mode = 2
+tooltip_text = "Whether you can drive"
+script = ExtResource("20_8h2ts")
+autonomousMode = ExtResource("23_si4l1")
+joystickMode = ExtResource("20_nx8g6")
+status = NodePath("Value/TextureRect")
+
+[node name="Label" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Drive"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="Thing" type="Label" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Drive/Label"]
+layout_mode = 2
+text = "Drive"
+vertical_alignment = 1
+
+[node name="Value" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Drive"]
+layout_mode = 2
+theme_override_constants/margin_left = 78
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+
+[node name="TextureRect" type="TextureRect" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Drive/Value"]
+layout_mode = 2
+texture = ExtResource("20_nx8g6")
+
+[node name="Autonomous" type="HBoxContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls" node_paths=PackedStringArray("status")]
+layout_mode = 2
+tooltip_text = "Whether you can do autonomous actions, like a capture"
+script = ExtResource("20_8h2ts")
+autonomousMode = ExtResource("20_nx8g6")
+joystickMode = ExtResource("23_si4l1")
+status = NodePath("Value/TextureRect")
+
+[node name="Label" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Autonomous"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="Thing" type="Label" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Autonomous/Label"]
+layout_mode = 2
+text = "Autonomous"
+vertical_alignment = 1
+
+[node name="Value" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Autonomous"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+
+[node name="TextureRect" type="TextureRect" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Autonomous/Value"]
+layout_mode = 2
+texture = ExtResource("20_nx8g6")
+
+[node name="CameraReady" type="HBoxContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls" node_paths=PackedStringArray("status")]
+layout_mode = 2
+tooltip_text = "If the cameras were properly initialized.
+If this is red, restart the robot app."
+script = ExtResource("18_ybt2s")
+ready = ExtResource("20_nx8g6")
+waiting = ExtResource("24_wsbyy")
+error = ExtResource("23_si4l1")
+noinfo = ExtResource("23_si4l1")
+status = NodePath("Value/TextureRect")
+
+[node name="Label" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/CameraReady"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="Thing" type="Label" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/CameraReady/Label"]
+layout_mode = 2
+text = "Camera Ready"
+vertical_alignment = 1
+
+[node name="Value" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/CameraReady"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+
+[node name="TextureRect" type="TextureRect" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/CameraReady/Value"]
+layout_mode = 2
+texture = ExtResource("20_nx8g6")
+
+[node name="Capture" type="HBoxContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls" node_paths=PackedStringArray("status")]
+layout_mode = 2
+tooltip_text = "Current state of a capture.
+Green is ready, Yellow is capturing, Red is can't capture."
+script = ExtResource("22_0flu2")
+ready = ExtResource("20_nx8g6")
+capturing = ExtResource("24_wsbyy")
+waitingConnection = ExtResource("23_si4l1")
+noinfo = ExtResource("23_si4l1")
+status = NodePath("Value/TextureRect")
+
+[node name="Label" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Capture"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="Thing" type="Label" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Capture/Label"]
+layout_mode = 2
+text = "Capture Ready"
+vertical_alignment = 1
+
+[node name="Value" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Capture"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+
+[node name="TextureRect" type="TextureRect" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/Capture/Value"]
+layout_mode = 2
+texture = ExtResource("20_nx8g6")
+
+[node name="ApproxImages" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls" node_paths=PackedStringArray("CountLabel")]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+script = ExtResource("25_u8mou")
+CountLabel = NodePath("Thing")
+
+[node name="Thing" type="Label" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/ApproxImages"]
+layout_mode = 2
+text = "Images Per Camera:
+1000000000000"
+vertical_alignment = 1
+
+[node name="CaptureInPlaceButtonContainer" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 30
+
+[node name="CaptureButton" type="Button" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/CaptureInPlaceButtonContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+tooltip_text = "Captures without moving forward
+"
+theme_override_styles/normal = ExtResource("23_8h2ts")
+theme_override_styles/pressed = ExtResource("21_w5tkc")
+theme_override_styles/hover = ExtResource("21_ymejs")
+text = "Capture in Place"
+autowrap_mode = 2
+icon_alignment = 1
+script = ExtResource("30_cvsls")
+MoveForward = false
+
+[node name="CaptureButtonContainer" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 30
+
+[node name="CaptureButton" type="Button" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/CaptureButtonContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+tooltip_text = "Start a Capture"
+theme_override_styles/normal = ExtResource("23_8h2ts")
+theme_override_styles/pressed = ExtResource("21_w5tkc")
+theme_override_styles/hover = ExtResource("21_ymejs")
+text = "Move and Capture"
+autowrap_mode = 2
+icon_alignment = 1
+script = ExtResource("30_cvsls")
+
+[node name="MapButtonContainer" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+
+[node name="StartMapping" type="Button" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls/MapButtonContainer" node_paths=PackedStringArray("slamMapContainer")]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+theme_override_styles/normal = ExtResource("23_8h2ts")
+theme_override_styles/pressed = ExtResource("21_w5tkc")
+theme_override_styles/hover = ExtResource("21_ymejs")
+text = "Start Mapping"
+autowrap_mode = 2
+icon_alignment = 1
+script = ExtResource("41_x8bqg")
+slamMapContainer = NodePath("../../../SlamMapContainer")
+
+[node name="EmergencyStopButtonContainer" parent="Panel/TabContainer/Sensors/HBoxContainer/MonitorsAndControls" instance=ExtResource("43_nqq3h")]
+layout_mode = 2
+theme_override_constants/margin_top = 30
+
+[node name="SlamMapContainer" parent="Panel/TabContainer/Sensors/HBoxContainer" instance=ExtResource("29_jhqyr")]
+layout_mode = 2
+
+[node name="Camera" type="MarginContainer" parent="Panel/TabContainer/Sensors/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="CameraTexture" type="TextureRect" parent="Panel/TabContainer/Sensors/HBoxContainer/Camera" node_paths=PackedStringArray("menuTabContainer")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+tooltip_text = "Camera feed from the bottom RealSense camera"
+texture = ExtResource("31_45br6")
+script = ExtResource("3_t0p6e")
+menuTabContainer = NodePath("../../../..")
+
+[node name="Config" type="PanelContainer" parent="Panel/TabContainer" node_paths=PackedStringArray("captureDropdown", "driveMode1", "driveMode2")]
+visible = false
+layout_mode = 2
+focus_neighbor_bottom = NodePath("Container/Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer/HBoxContainer/MarginContainer/CaptureDropdown")
+focus_next = NodePath("Container/Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer/HBoxContainer/MarginContainer/CaptureDropdown")
+script = ExtResource("35_lykju")
+captureDropdown = NodePath("Container/Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer/HBoxContainer/MarginContainer/CaptureDropdown")
+driveMode1 = NodePath("Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode1/HBoxContainer/MarginContainer/OptionDeopdown")
+driveMode2 = NodePath("Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode2/HBoxContainer/MarginContainer/OptionDeopdown")
+metadata/_tab_index = 1
+
+[node name="Container" type="HBoxContainer" parent="Panel/TabContainer/Config"]
+layout_mode = 2
+
+[node name="Column1" type="VBoxContainer" parent="Panel/TabContainer/Config/Container"]
+layout_mode = 2
+
+[node name="CameraOptionContainers" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+text = "Camera Options"
+
+[node name="CaptureTypeContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Which capture type will be used.
+Double: Captures 2 image sets with settings below
+Single: Captures 1 image set with settings labelled \"First\" below"
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="CaptureType" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer/HBoxContainer"]
+layout_mode = 2
+text = "Capture Type"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="CaptureDropdown" type="OptionButton" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer/HBoxContainer/MarginContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../../../../Shutter1/HBoxContainer/MarginContainer/OptionDeopdown")
+selected = 0
+allow_reselect = true
+item_count = 2
+popup/item_0/text = "Double"
+popup/item_0/id = 1
+popup/item_1/text = "Single"
+popup/item_1/id = 0
+script = ExtResource("29_wsbyy")
+
+[node name="Shutter1" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "How long in seconds the shutter is open on the first image set"
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter1"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter1/HBoxContainer"]
+layout_mode = 2
+text = "First Shutter"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter1/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="OptionDeopdown" type="OptionButton" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter1/HBoxContainer/MarginContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../../../../CaptureTypeContainer/HBoxContainer/MarginContainer/CaptureDropdown")
+focus_neighbor_right = NodePath("../../../../../../../Column2/RestartRobotContainer/Button")
+focus_neighbor_bottom = NodePath("../../../../Shutter2/HBoxContainer/MarginContainer/OptionDeopdown")
+selected = 3
+allow_reselect = true
+item_count = 5
+popup/item_0/text = "1/3"
+popup/item_0/id = 0
+popup/item_1/text = "1/8"
+popup/item_1/id = 1
+popup/item_2/text = "1/100"
+popup/item_2/id = 2
+popup/item_3/text = "1/1600"
+popup/item_3/id = 3
+popup/item_4/text = "1/3200"
+popup/item_4/id = 4
+script = ExtResource("32_m4u6l")
+
+[node name="Shutter2" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "How long in seconds the shutter is open on the second image set"
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter2/HBoxContainer"]
+layout_mode = 2
+text = "Second Shutter"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter2/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="OptionDeopdown" type="OptionButton" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Shutter2/HBoxContainer/MarginContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../../../../Shutter1/HBoxContainer/MarginContainer/OptionDeopdown")
+focus_neighbor_right = NodePath("../../../../../../../Column2/StopRobotProcess/Button")
+focus_neighbor_bottom = NodePath("../../../../Iso1/HBoxContainer/MarginContainer/OptionDeopdown")
+selected = 1
+allow_reselect = true
+item_count = 5
+popup/item_0/text = "1/3"
+popup/item_0/id = 0
+popup/item_1/text = "1/8"
+popup/item_1/id = 1
+popup/item_2/text = "1/100"
+popup/item_2/id = 2
+popup/item_3/text = "1/1600"
+popup/item_3/id = 3
+popup/item_4/text = "1/3200"
+popup/item_4/id = 4
+script = ExtResource("32_m4u6l")
+batchId = 1
+
+[node name="Iso1" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "ISO value for the first image set"
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso1"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso1/HBoxContainer"]
+layout_mode = 2
+text = "First ISO"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso1/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="OptionDeopdown" type="OptionButton" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso1/HBoxContainer/MarginContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../../../../Shutter2/HBoxContainer/MarginContainer/OptionDeopdown")
+focus_neighbor_right = NodePath("../../../../../../../Column2/StopRobotProcess/Button")
+focus_neighbor_bottom = NodePath("../../../../Iso2/HBoxContainer/MarginContainer/OptionDeopdown")
+selected = 0
+allow_reselect = true
+item_count = 2
+popup/item_0/text = "100"
+popup/item_0/id = 100
+popup/item_1/text = "500"
+popup/item_1/id = 500
+script = ExtResource("33_jhqyr")
+
+[node name="Iso2" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "ISO value for the second image set"
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso2/HBoxContainer"]
+layout_mode = 2
+text = "Second ISO"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso2/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="OptionDeopdown" type="OptionButton" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/Iso2/HBoxContainer/MarginContainer"]
+layout_mode = 2
+selected = 1
+allow_reselect = true
+item_count = 2
+popup/item_0/text = "100"
+popup/item_0/id = 100
+popup/item_1/text = "500"
+popup/item_1/id = 500
+script = ExtResource("33_jhqyr")
+batchId = 1
+
+[node name="DriveMode1" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Drive mode for the first image set"
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode1"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode1/HBoxContainer"]
+layout_mode = 2
+text = "First Drive Mode"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode1/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="OptionDeopdown" type="OptionButton" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode1/HBoxContainer/MarginContainer"]
+layout_mode = 2
+selected = 6
+allow_reselect = true
+item_count = 9
+popup/item_0/text = "1.0ev5"
+popup/item_0/id = 262923
+popup/item_1/text = "1.3ev5"
+popup/item_1/id = 262944
+popup/item_2/text = "1.5ev5"
+popup/item_2/id = 262949
+popup/item_3/text = "1.7ev5"
+popup/item_3/id = 262954
+popup/item_4/text = "1.0ev7"
+popup/item_4/id = 262940
+popup/item_5/text = "1.3ev7"
+popup/item_5/id = 262945
+popup/item_6/text = "1.5ev7"
+popup/item_6/id = 262950
+popup/item_7/text = "1.7ev7"
+popup/item_7/id = 262955
+popup/item_8/text = "1.0ev9"
+popup/item_8/id = 262924
+script = ExtResource("34_jhqyr")
+
+[node name="DriveMode2" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Drive mode for the second image set"
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode2/HBoxContainer"]
+layout_mode = 2
+text = "Second Drive Mode"
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode2/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+
+[node name="OptionDeopdown" type="OptionButton" parent="Panel/TabContainer/Config/Container/Column1/CameraOptionContainers/VBoxContainer/DriveMode2/HBoxContainer/MarginContainer"]
+layout_mode = 2
+selected = 6
+allow_reselect = true
+item_count = 9
+popup/item_0/text = "1.0ev5"
+popup/item_0/id = 262923
+popup/item_1/text = "1.3ev5"
+popup/item_1/id = 262944
+popup/item_2/text = "1.5ev5"
+popup/item_2/id = 262949
+popup/item_3/text = "1.7ev5"
+popup/item_3/id = 262954
+popup/item_4/text = "1.0ev7"
+popup/item_4/id = 262940
+popup/item_5/text = "1.3ev7"
+popup/item_5/id = 262945
+popup/item_6/text = "1.5ev7"
+popup/item_6/id = 262950
+popup/item_7/text = "1.7ev7"
+popup/item_7/id = 262955
+popup/item_8/text = "1.0ev9"
+popup/item_8/id = 262924
+script = ExtResource("34_jhqyr")
+batchId = 1
+
+[node name="Column2" type="VBoxContainer" parent="Panel/TabContainer/Config/Container"]
+layout_mode = 2
+
+[node name="FormatContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column2"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="FormatButton" type="Button" parent="Panel/TabContainer/Config/Container/Column2/FormatContainer" node_paths=PackedStringArray("confirmationPanel", "tabContainer")]
+custom_minimum_size = Vector2(150, 80)
+layout_mode = 2
+tooltip_text = "Formats all cameras on robot"
+focus_neighbor_left = NodePath("../../../Column1/CameraOptionContainers/VBoxContainer/CaptureTypeContainer/HBoxContainer/MarginContainer/CaptureDropdown")
+theme_override_styles/normal = ExtResource("23_8h2ts")
+theme_override_styles/pressed = ExtResource("21_w5tkc")
+theme_override_styles/hover = ExtResource("21_ymejs")
+text = "Format Cameras"
+autowrap_mode = 2
+icon_alignment = 1
+script = ExtResource("6_kt4gu")
+dialogueValue = "You are about to erase all data on all cameras.
+Are you sure you want to format?"
+confirmationPanel = NodePath("../../../../../../Confirmation")
+tabContainer = NodePath("../../../../..")
+
+[node name="RestartRobotContainer" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column2"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="Button" type="Button" parent="Panel/TabContainer/Config/Container/Column2/RestartRobotContainer" node_paths=PackedStringArray("palController")]
+custom_minimum_size = Vector2(150, 80)
+layout_mode = 2
+tooltip_text = "Restarts the robot app."
+focus_neighbor_left = NodePath("../../../Column1/CameraOptionContainers/VBoxContainer/Shutter1/HBoxContainer/MarginContainer/OptionDeopdown")
+theme_override_styles/normal = ExtResource("23_8h2ts")
+theme_override_styles/pressed = ExtResource("21_w5tkc")
+theme_override_styles/hover = ExtResource("21_ymejs")
+text = "Restart Robot"
+script = ExtResource("27_wsbyy")
+palController = NodePath("../../../../../../../PALControl")
+activeOnError = true
+
+[node name="StopRobotProcess" type="MarginContainer" parent="Panel/TabContainer/Config/Container/Column2"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="Button" type="Button" parent="Panel/TabContainer/Config/Container/Column2/StopRobotProcess" node_paths=PackedStringArray("palController")]
+custom_minimum_size = Vector2(150, 80)
+layout_mode = 2
+tooltip_text = "Stops the app to allow for transfers"
+focus_neighbor_left = NodePath("../../../Column1/CameraOptionContainers/VBoxContainer/Shutter1/HBoxContainer/MarginContainer/OptionDeopdown")
+theme_override_styles/normal = ExtResource("23_8h2ts")
+theme_override_styles/pressed = ExtResource("21_w5tkc")
+theme_override_styles/hover = ExtResource("21_ymejs")
+text = "Stop Robot"
+script = ExtResource("27_wsbyy")
+palController = NodePath("../../../../../../../PALControl")
+
+[node name="ReconnectPanel" type="Panel" parent="Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("27_qffim")
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel/ReconnectPanel"]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 655.0
+
+[node name="Label" type="Label" parent="Panel/ReconnectPanel/CenterContainer"]
+layout_mode = 2
+text = "Disconnected from robot. Retrying..."
+label_settings = SubResource("LabelSettings_si4l1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GenericConfirmation" type="Panel" parent="Panel" node_paths=PackedStringArray("label", "dialogAnswers")]
+visible = false
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+theme = SubResource("Theme_kt4gu")
+script = ExtResource("43_x8bqg")
+label = NodePath("DialogContainer/CenterContainer/Warning")
+dialogAnswers = NodePath("DialogContainer/HBoxContainer")
+
+[node name="DialogContainer" type="VBoxContainer" parent="Panel/GenericConfirmation"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -179.0
+offset_top = -51.5
+offset_right = 179.0
+offset_bottom = 51.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel/GenericConfirmation/DialogContainer"]
+layout_mode = 2
+
+[node name="Warning" type="Label" parent="Panel/GenericConfirmation/DialogContainer/CenterContainer"]
+layout_mode = 2
+text = "You are about to erase all data on all cameras.
+Are you sure you want to format?"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/GenericConfirmation/DialogContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="YesGroup" type="HBoxContainer" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer/YesGroup"]
+layout_mode = 2
+text = "Yes"
+
+[node name="ButtonA" type="TextureRect" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer/YesGroup"]
+layout_mode = 2
+texture = ExtResource("20_nx8g6")
+
+[node name="Label" type="Label" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer/YesGroup/ButtonA"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.423529, 0, 1)
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="NoGroup" type="HBoxContainer" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer/NoGroup"]
+layout_mode = 2
+text = "No"
+
+[node name="ButtonB" type="TextureRect" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer/NoGroup"]
+layout_mode = 2
+texture = ExtResource("23_si4l1")
+
+[node name="Label" type="Label" parent="Panel/GenericConfirmation/DialogContainer/HBoxContainer/NoGroup/ButtonB"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.659987, 0, 0.0328435, 1)
+text = "B"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Confirmation" type="Panel" parent="Panel" node_paths=PackedStringArray("label", "dialogAnswers")]
+visible = false
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+theme = SubResource("Theme_kt4gu")
+script = ExtResource("43_x8bqg")
+label = NodePath("DialogContainer/CenterContainer/Warning")
+dialogAnswers = NodePath("DialogContainer/HBoxContainer")
+
+[node name="DialogContainer" type="VBoxContainer" parent="Panel/Confirmation"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -179.0
+offset_top = -51.5
+offset_right = 179.0
+offset_bottom = 51.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel/Confirmation/DialogContainer"]
+layout_mode = 2
+
+[node name="Warning" type="Label" parent="Panel/Confirmation/DialogContainer/CenterContainer"]
+layout_mode = 2
+text = "You are about to erase all data on all cameras.
+Are you sure you want to format?"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Confirmation/DialogContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="YesGroup" type="HBoxContainer" parent="Panel/Confirmation/DialogContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Confirmation/DialogContainer/HBoxContainer/YesGroup"]
+layout_mode = 2
+text = "Yes"
+
+[node name="ButtonA" type="TextureRect" parent="Panel/Confirmation/DialogContainer/HBoxContainer/YesGroup"]
+layout_mode = 2
+texture = ExtResource("20_nx8g6")
+
+[node name="Label" type="Label" parent="Panel/Confirmation/DialogContainer/HBoxContainer/YesGroup/ButtonA"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.423529, 0, 1)
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/Confirmation/DialogContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="NoGroup" type="HBoxContainer" parent="Panel/Confirmation/DialogContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Confirmation/DialogContainer/HBoxContainer/NoGroup"]
+layout_mode = 2
+text = "No"
+
+[node name="ButtonB" type="TextureRect" parent="Panel/Confirmation/DialogContainer/HBoxContainer/NoGroup"]
+layout_mode = 2
+texture = ExtResource("23_si4l1")
+
+[node name="Label" type="Label" parent="Panel/Confirmation/DialogContainer/HBoxContainer/NoGroup/ButtonB"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.659987, 0, 0.0328435, 1)
+text = "B"
+horizontal_alignment = 1
+vertical_alignment = 1

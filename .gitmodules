@@ -1,0 +1,15 @@
+[submodule "ros_ws/src/ouster-ros"]
+	path = ros_ws/src/ouster-ros
+	url = https://github.com/ouster-lidar/ouster-ros.git
+[submodule "ros_ws/src/xsens-ros"]
+	path = ros_ws/src/xsens-ros
+	url = https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
+[submodule "camera_driver/third-party/magic_enum"]
+	path = camera_driver/third-party/magic_enum
+	url = https://github.com/neargye/magic_enum.git
+[submodule "camera_driver/third-party/fmt"]
+	path = camera_driver/third-party/fmt
+	url = https://github.com/fmtlib/fmt
+[submodule "camera_driver/third-party/cli11"]
+	path = camera_driver/third-party/cli11
+	url = https://github.com/CLIUtils/CLI11

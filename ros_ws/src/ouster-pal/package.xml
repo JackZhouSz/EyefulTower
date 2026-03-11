@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>meta_ouster_config</name>
+  <version>0.0.1</version>
+  <description>PAL and ROS configs for ouster driver</description>
+  <maintainer email="noreply@meta.com">Meta</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>ouster_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

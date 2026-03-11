@@ -1,0 +1,3 @@
+ouster_wait_module:
+  run: "eyeful_ros sensor_wait --ros-args -p ip:=192.168.1.60 -p retries:=60"
+  finishes: True

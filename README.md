@@ -45,9 +45,20 @@ Scene                                        | ver | cams                       
 [workshop][workshop_index]                   | v1  |  [9](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg-2k/collage.mp4)          | 700 | 6,300 | [198&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-2k/index.html)          | [50&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-1k/index.html)          | [123&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg/index.html)          | [27&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg-4k/index.html)          |  [8&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg-2k/index.html)          | [2.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/images-jpeg-1k/index.html)
 [raf_emptyroom][raf_emptyroom_index]         | v2  | [22](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/images-jpeg-2k/collage.mp4)     | 365 | 8,030 | [252&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/images-2k/index.html)     | [63&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/images-1k/index.html)     | [213&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/images-jpeg/index.html)     | [45&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/images-jpeg-4k/index.html)     | [12&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/images-jpeg-2k/index.html)     | [2.5&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/images-jpeg-1k/index.html)
 [raf_furnishedroom][raf_furnishedroom_index] | v2  | [22](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/images-jpeg-2k/collage.mp4) | 154 | 3,388 | [106&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/images-2k/index.html) | [27&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/images-1k/index.html) |  [90&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/images-jpeg/index.html) | [19&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/images-jpeg-4k/index.html) |  [5&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/images-jpeg-2k/index.html) | [1.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/images-jpeg-1k/index.html)
-Total                                        |     |                                                                                                                                      |     |       | 1,262&nbsp;GB                                                                                                                           | 318&nbsp;GB                                                                                                                            |  939&nbsp;GB                                                                                                                              | 199&nbsp;GB                                                                                                                                 |  54&nbsp;GB                                                                                                                                 | 12.5&nbsp;GB
+[meeting_room][meeting_room_index]           | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/images-jpeg-2k/collage.mp4)       |  31 | 1,302 |  [46&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/images-2k/index.html)      | [11&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/images-1k/index.html)      |  [14&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/images-jpeg/index.html)      |  [4&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/images-jpeg-4k/index.html)      |  [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/images-jpeg-2k/index.html)      | [0.2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/images-jpeg-1k/index.html)
+[vr_room][vr_room_index]                     | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/images-jpeg-2k/collage.mp4)            |  27 | 1,134 |  [40&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/images-2k/index.html)           | [10&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/images-1k/index.html)           |  [15&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/images-jpeg/index.html)           |  [4&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/images-jpeg-4k/index.html)           |  [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/images-jpeg-2k/index.html)           | [0.2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/images-jpeg-1k/index.html)
+[lounge_room][lounge_room_index]             | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/images-jpeg-2k/collage.mp4)        |  12 |   504 |  [18&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/images-2k/index.html)       |  [4&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/images-1k/index.html)       |   [7&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/images-jpeg/index.html)       |  [2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/images-jpeg-4k/index.html)       |  [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/images-jpeg-2k/index.html)       | [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/images-jpeg-1k/index.html)
+[workshop2][workshop2_index]                 | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/images-jpeg-2k/collage.mp4)          |  42 | 1,764 |  [62&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/images-2k/index.html)         | [15&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/images-1k/index.html)         |  [20&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/images-jpeg/index.html)         |  [5&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/images-jpeg-4k/index.html)         |  [2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/images-jpeg-2k/index.html)         | [0.4&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/images-jpeg-1k/index.html)
+[office1c][office1c_index]                   | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/images-jpeg-2k/collage.mp4)           |  20 |   840 |  [29&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/images-2k/index.html)          |  [7&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/images-1k/index.html)          |  [11&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/images-jpeg/index.html)          |  [3&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/images-jpeg-4k/index.html)          |  [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/images-jpeg-2k/index.html)          | [0.2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/images-jpeg-1k/index.html)
+[eyeful_room][eyeful_room_index]             | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/images-jpeg-2k/collage.mp4)        |  27 | 1,134 |  [40&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/images-2k/index.html)       | [10&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/images-1k/index.html)       |  [14&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/images-jpeg/index.html)       |  [4&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/images-jpeg-4k/index.html)       |  [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/images-jpeg-2k/index.html)       | [0.2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/images-jpeg-1k/index.html)
+[playroom][playroom_index]                   | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/images-jpeg-2k/collage.mp4)           |  16 |   672 |  [24&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/images-2k/index.html)          |  [6&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/images-1k/index.html)          |   [7&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/images-jpeg/index.html)          |  [2&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/images-jpeg-4k/index.html)          |  [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/images-jpeg-2k/index.html)      | [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/images-jpeg-1k/index.html)
+[playroom_med][playroom_med_index]           | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/images-jpeg-2k/collage.mp4)       |   8 |   336 |  [12&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/images-2k/index.html)      |  [3&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/images-1k/index.html)      |   [4&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/images-jpeg/index.html)      |  [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/images-jpeg-4k/index.html)      |  [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/images-jpeg-2k/index.html)  | [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/images-jpeg-1k/index.html)
+[playroom_small][playroom_small_index]       | v3  | [14](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/images-jpeg-2k/collage.mp4)     |   3 |   126 |   [4&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/images-2k/index.html)    |  [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/images-1k/index.html)    |   [1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/images-jpeg/index.html)    |  [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/images-jpeg-4k/index.html)|  [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/images-jpeg-2k/index.html)| [0.1&nbsp;GB](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/images-jpeg-1k/index.html)
+Total                                        |     |                                                                                                                                      |     |       | 1537                                                                                                                                    | 385                                                                                                                                   | 1032                                                                                                                                      | 224                                                                                                                                        | 63                                                                                                                                        | 14.1
 
 \* v2 with 3 fewer cameras than standard configuration, i.e. only 19 cameras.
+
+<!-- TODO: v3 cameras — number of cameras differs per scene, fill in cams/pos/img/sizes once data is hosted -->
 
 [apartment_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/index.html
 [kitchen_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/kitchen/index.html
@@ -62,6 +73,15 @@ Total                                        |     |                            
 [workshop_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop/index.html
 [raf_emptyroom_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_emptyroom/index.html
 [raf_furnishedroom_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/raf_furnishedroom/index.html
+[meeting_room_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/index.html
+[vr_room_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/index.html
+[lounge_room_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/index.html
+[workshop2_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/index.html
+[office1c_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/index.html
+[eyeful_room_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/index.html
+[playroom_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/index.html
+[playroom_med_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/index.html
+[playroom_small_index]: https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/index.html
 
 
 ## Example Images
@@ -140,10 +160,65 @@ Total                                        |     |                            
 </table>
 
 
+**March 2026:** The following nine scenes were captured with Eyeful Tower v3:
+
+<table>
+<thead>
+  <tr>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/index.html">meeting_room</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/index.html">vr_room</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/index.html">lounge_room</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/index.html">workshop2</a></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/meeting_room/index.html"> <img src="media/meeting_room.jpg" alt="meeting_room"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/vr_room/index.html"> <img src="media/vr_room.jpg" alt="vr_room"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/lounge_room/index.html"> <img src="media/lounge_room.jpg" alt="lounge_room"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/workshop2/index.html"> <img src="media/workshop2.jpg" alt="workshop2"> </a> </td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/index.html">office1c</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/index.html">eyeful_room</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/index.html">playroom</a></th>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/index.html">playroom_med</a></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/office1c/index.html"> <img src="media/office1c.jpg" alt="office1c"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/eyeful_room/index.html"> <img src="media/eyeful_room.jpg" alt="eyeful_room"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom/index.html"> <img src="media/playroom.jpg" alt="playroom"> </a> </td>
+    <td width="25%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_med/index.html"> <img src="media/playroom_med.jpg" alt="playroom_med"> </a> </td>
+  </tr>
+</tbody>
+</table>
+
+<table width="25%">
+<thead>
+  <tr>
+    <th><a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/index.html">playroom_small</a></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="100%"> <a href="https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/playroom_small/index.html"> <img src="media/playroom_small.jpg" alt="playroom_small"> </a> </td>
+  </tr>
+</tbody>
+</table>
+
+
 ## Capture Rig
 
-All images in the dataset were taken with either Eyeful Tower v1 or v2 (as specified in [the overview table](#dataset-overview)).
-Eyeful Tower v1 comprises 9 fisheye cameras, whereas Eyeful Tower v2 comprises 22 pinhole cameras (19 for “kitchen”).
+All images in the dataset were taken with either Eyeful Tower v1, v2, or v3 (as specified in [the overview table](#dataset-overview)).
+Eyeful Tower v1 comprises 9 fisheye cameras, whereas Eyeful Tower v2 comprises 22 pinhole cameras (19 for "kitchen").
+Eyeful Tower v3 comprises 14 fisheye cameras.
 
 ![Eyeful Tower Version Comparison](media/eyeful_tower.jpg)
 
@@ -172,16 +247,16 @@ aws s3 sync --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/
 For those interested in experimenting with specific cameras, we recommend viewing the [collage video](https://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15.s3.amazonaws.com/EyefulTower/apartment/images-jpeg-2k/collage.mp4) first. This will help you identify which camera views you'd like to utilize. For example, for this apartment scene using the v2 capture rig, you might consider camera IDs 19, 20, 21 which are placed at the same height.
 
 
-### Download all scenes (1K JPEGs only) using bash — 9 GB
+### Download all scenes (1K JPEGs only) using bash — 14.1 GB
 ```bash
-for dataset in apartment kitchen office1a office1b office2 office_view1 office_view2 riverview seating_area table workshop; do
+for dataset in apartment kitchen office1a office1b office2 office_view1 office_view2 riverview seating_area table workshop raf_emptyroom raf_furnishedroom meeting_room vr_room lounge_room workshop2 office1c eyeful_room playroom playroom_med playroom_small; do
   mkdir -p $dataset/images-jpeg-1k;
   aws s3 cp --recursive --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/$dataset/images-jpeg-1k/ $dataset/images-jpeg-1k/;
 done
 ```
 
 
-### Download the entire Eyeful Tower dataset — 3.5 TB
+### Download the entire Eyeful Tower dataset — 4.4 TB
 ```
 aws s3 sync --no-sign-request s3://fb-baas-f32eacb9-8abb-11eb-b2b8-4857dd089e15/EyefulTower/ .
 ```
@@ -230,6 +305,7 @@ apartment
 ├── mesh.jpg                 # Mesh texture (16K×16K)
 ├── mesh.mtl                 # Mesh material file
 ├── mesh.obj                 # Mesh in OBJ format
+├── cc_detections            # ColorChecker detections (v3 scenes only)
 └── splits.json              # Training/testing splits
 ```
 
@@ -237,7 +313,8 @@ apartment
 ### HDR images (`images-1k/{camera}/*.exr` and `images-2k/{camera}/*.exr`)
 
 * High dynamic range images merged from 9-photo raw exposure brackets.
-* Downsampled to “1K” (684×1024 pixels) or “2K” resolution (1368×2048 pixels).
+* **v1 and v2:** Downsampled to “1K” (684×1024 pixels) or “2K” resolution (1368×2048 pixels).
+* **v3:** Downsampled to “1K” (723x1082 pixels) or “2K” resolution (1446x2165 pixels).
 * Color space: DCI-P3 (linear)
 * Stored as EXR images with uncompressed 32-bit floating-point numbers.
 * All image filenames are prefixed with the camera name, e.g. `17_DSC0316.exr`.
@@ -274,16 +351,21 @@ cv2.imwrite("apartment-17_DSC0316.jpg", img, params=[cv2.IMWRITE_JPEG_QUALITY, 1
 
 ### JPEG images (`images-jpeg*/{camera}/*.jpg`)
 
-* We provide JPEG images at four resolution levels:
+* We provide JPEG images at four resolution levels for the Eyeful v1 and v2:
   1. `images-jpeg/`: 5784 × 8660 = 50. megapixels — full original image resolution
   2. `images-jpeg-4k/`: 2736 × 4096 = 11.2 megapixels
   3. `images-jpeg-2k/`: 1368 × 2048 = 2.8 megapixels
   4. `images-jpeg-1k/`: 684 × 1024 = 0.7 megapixels
+* The Eyeful v3 datasets have slightly different resolutions
+  1. `images-jpeg/`: 5784 × 8660 = 50. megapixels — full original image resolution
+  2. `images-jpeg-4k/`: 2892 × 4330 = 12.5 megapixels
+  3. `images-jpeg-2k/`: 1446 × 2165 = 3.1 megapixels
+  4. `images-jpeg-1k/`: 723 × 1082 = 0.8 megapixels
 * The JPEG images are white-balanced and tone-mapped versions of the HDR images.
 See the code above for the details.
 * Each scene uses white-balance settings derived from a ColorChecker, which individually scale the RGB channels as follows:
 
-  Scene             |      RGB scale factors
+  Scene v1          |      RGB scale factors
   ----------------- | :------------------------:
   apartment         | `0.726097, 1.0, 1.741252`
   kitchen           | `0.628143, 1.0, 2.212346`
@@ -296,8 +378,23 @@ See the code above for the details.
   seating_area      | `0.616093, 1.0, 2.426888`
   table             | `0.653298, 1.0, 2.139514`
   workshop          | `0.709929, 1.0, 1.797705`
+
+  Scene v2          |      RGB scale factors
+  ----------------- | :------------------------:
   raf_emptyroom     | `0.718776, 1.0, 1.787020`
   raf_furnishedroom | `0.721494, 1.0, 1.793423`
+
+  Scene v3          |      RGB scale factors
+  ----------------- | :------------------------:
+  meeting_room      | `1.138619, 1.0, 1.055120`
+  vr_room           | `0.820177, 1.0, 1.976957`
+  lounge_room       | `0.804608, 1.0, 2.013605`
+  workshop2         | `0.853356, 1.0, 1.055120`
+  office1c          | `0.782472, 1.0, 2.049387`
+  eyeful_room       | `0.826096, 1.0, 1.702777`
+  playroom          | `0.772025, 1.0, 1.897146`
+  playroom_med      | `0.762237, 1.0, 1.976107`
+  playroom_small    | `0.738409, 1.0, 2.075088`
 
 
 ### Camera calibration in KRT format (`cameras.json`)
@@ -306,16 +403,16 @@ This JSON file has the basic structure `{"KRT": [<one object per image>]}`, wher
 * `width`: image width, in pixels (usually 5784)
 * `height`: image height, in pixels (usually 8660)
 * `cameraId`: filename component for this image (e.g. `"0/0_REN0001"`); to get a complete path, use `"{scene}/{imageFormat}/{cameraId}.{extension}"` for:
-  * `scene`: any of the 11 scene names,
+  * `scene`: any of the 22 scene names,
   * `imageFormat`: one of `"images-2k"`, `"images-jpeg-2k"`, `"images-jpeg-4k"`, or `"images-jpeg"`
   * `extension`: file extension, `jpg` for JPEGs, `exr` for EXR images (HDR)
 * `K`: 3×3 intrinsic camera matrix for full-resolution image (**column-major**)
 * `T`: 4×4 world-to-camera transformation matrix (**column-major**)
 * `distortionModel`: lens distortion model used:
-  * `"Fisheye"` for fisheye images (Eyeful v1)
+  * `"Fisheye"` for fisheye images (Eyeful v1 and v3)
   * `"RadialAndTangential"` for pinhole images (Eyeful v2)
-* `distortion`: lens distortion coefficients for use with OpenCV’s `cv2.undistort` function
-  * fisheye images (Eyeful v1): `[k1, k2, k3, _, _, _, p1, p2]`
+* `distortion`: lens distortion coefficients for use with OpenCV's `cv2.undistort` function
+  * fisheye images (Eyeful v1 and v3): `[k1, k2, k3, _, _, _, p1, p2]`
     * **Note:** The projection model is an ideal (equidistant) fisheye model.
   * pinhole images (Eyeful v2): `[k1, k2, p1, p2, k3]` (same order as `cv2.undistort`)
 
@@ -326,7 +423,7 @@ This JSON file has the basic structure `{"KRT": [<one object per image>]}`, wher
 * `cameraMasterId` (optional): Metashape camera ID for the master camera (in rig calibration) at this position/frame
   * all images taken at the same time share the same `cameraMasterId`
 * `sensorMasterId` (optional): Metashape sensor ID for the master camera in rig calibration
-  * should have the same value for all cameras except the master camera (usually `"6"` for Eyeful v1, `"13"` for Eyeful v2).
+  * should have the same value for all cameras except the master camera (usually `"6"` for Eyeful v1, `"13"` for Eyeful v2, `"40"` for Eyeful v3).
 
 World coordinate system: right-handed, y-up, `y=0` is ground plane, units are in meters.
 
@@ -345,7 +442,8 @@ World coordinate system: right-handed, y-up, `y=0` is ground plane, units are in
 
 ### Exported COLMAP reconstruction (`colmap/`)
 
-These [COLMAP](https://colmap.github.io/) reconstructions are exported from our original reconstructions using Metashape 2.1.3 with default parameters.
+These [COLMAP](https://colmap.github.io/) reconstructions are exported from our original reconstructions using Metashape 2.1.3 with default parameters for v1 and v2 datasets. For v3 datasets, they were exported as part of the processing pipeline using Metashape 2.2.2.
+
 * The images under `colmap/images` were automatically undistorted from the images in `images-jpeg` to pinhole projections with principal point at image center.
 * Note that this undistortion severely crops fisheye images, and tends to produce different image sizes for different cameras.
 * The images in `colmap/images-*` are downsampled versions of the full-resolution undistorted images, similar to the [Mip-NeRF 360](https://jonbarron.info/mipnerf360/) dataset format.
@@ -354,8 +452,7 @@ These [COLMAP](https://colmap.github.io/) reconstructions are exported from our 
 ### Training/testing splits (`splits.json`)
 
 * Contains lists of images for training (`"train"`) and testing (`"test"`).
-* All images of one camera are held out for testing: camera `5` for Eyeful v1, and camera `17` for Eyeful v2.
-
+* All images of one camera are held out for testing: camera `5` for Eyeful v1, camera `17` for Eyeful v2, and camera `45` for Eyeful v3.
 
 ## Changelog
 
@@ -363,6 +460,16 @@ These [COLMAP](https://colmap.github.io/) reconstructions are exported from our 
 * **18 Jan 2024** – added “1K” resolution (684×1024 pixels) EXRs and JPEGs for small-scale experimentation.
 * **19 Apr 2024** – added two rooms from [Real Acoustic Fields (RAF)](https://github.com/facebookresearch/real-acoustic-fields) dataset: [`raf_emptyroom`][raf_emptyroom_index] and [`raf_furnishedroom`][raf_furnishedroom_index].
 * **9 Oct 2024** – added exported COLMAP reconstructions with undistorted images in the Mip-NeRF 360 format, e.g. compatible with [gsplat](https://github.com/nerfstudio-project/gsplat).
+* **11 Mar 2026** – added nine new scenes captured with Eyeful Tower v3: `meeting_room`, `vr_room`, `lounge_room`, `workshop2`, `office1c`, `eyeful_room`, `playroom`, `playroom_med`, `playroom_small`. Relicensed all content under the MIT license. Added capture and processing software, docs with overviews of the software, camera updating processes, and CAD models of the robot. The [Capture Guide](docs/EyefulTowerCapture.md) and [Processing Guide](docs/EyefulTowerDataPipeline.md) provide a good overview of the new components:
+    * `camera_driver` - This is the code that wraps the Sony camera drivers, and a couple apps for interacting with the cameras on Eyeful.
+    * `commandly` - a Godot based app used for controlling the robot during captures.
+    * `docs` - Operational docs and CAD models
+    * `processing` - Scripts to merge RAW images to HDR, perform MVS with Metashape, and full pipeline orchestration
+    * `ros_ws` - ROS2 driver for controlling the EyefulTower robot and other drivers forthird party hardware on the robot.
+
+    Notably, the `playroom`, `playroom_med`, and `playroom_small` scenes are 3 instances of the same scene with different downsampled image counts, with `playroom_small` being particularly amenable to fast iteration.
+
+    You will also need to have `git lfs` support installed to download the CAD files.
 
 
 ## Citation
@@ -392,8 +499,7 @@ If you use any data from this dataset or any code released in this repository, p
 ```
 
 ## License
-Creative Commons Attribution-NonCommercial (CC BY-NC) 4.0,
-as found in the [LICENSE file](LICENSE).
+MIT License, as found in the [LICENSE file](LICENSE).
 
 [[Terms of Use](https://opensource.fb.com/legal/terms/)]
 [[Privacy Policy](https://opensource.fb.com/legal/privacy)]

@@ -1,0 +1,40 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Beveled-edged rounded rectangle background -->
+  <rect x="4" y="4" width="120" height="120" rx="24" fill="#FF7043" stroke="#BF360C" stroke-width="8"/>
+
+  <!-- Robot body (main) -->
+  <rect x="34" y="46" width="60" height="48" rx="12" fill="#FF8A65" stroke="#D84315" stroke-width="3"/>
+
+  <!-- Robot "head" -->
+  <rect x="46" y="32" width="36" height="22" rx="8" fill="#FFCCBC" stroke="#D84315" stroke-width="3"/>
+
+  <!-- Central main camera -->
+  <circle cx="64" cy="64" r="14" fill="#F4511E" stroke="#BF360C" stroke-width="3"/>
+  <circle cx="64" cy="64" r="7" fill="#FFF3E0" stroke="#BF360C" stroke-width="2"/>
+  <circle cx="64" cy="64" r="3" fill="#BF360C"/>
+
+  <!-- Left camera "eye" -->
+  <circle cx="54" cy="42" r="6" fill="#F44336" stroke="#BF360C" stroke-width="2"/>
+  <circle cx="54" cy="42" r="2.5" fill="#FFFDE7"/>
+
+  <!-- Right camera "eye" -->
+  <circle cx="74" cy="42" r="6" fill="#FF5722" stroke="#BF360C" stroke-width="2"/>
+  <circle cx="74" cy="42" r="2.5" fill="#FFFDE7"/>
+
+  <!-- Left "shoulder" camera -->
+  <circle cx="40" cy="65" r="5" fill="#FF7043" stroke="#BF360C" stroke-width="2"/>
+  <circle cx="40" cy="65" r="2" fill="#FFFDE7"/>
+
+  <!-- Right "shoulder" camera -->
+  <circle cx="88" cy="65" r="5" fill="#FF7043" stroke="#BF360C" stroke-width="2"/>
+  <circle cx="88" cy="65" r="2" fill="#FFFDE7"/>
+
+  <!-- Robot base (wheels) -->
+  <rect x="44" y="94" width="40" height="9" rx="3.5" fill="#E65100"/>
+  <circle cx="54" cy="98" r="4.5" fill="#BF360C"/>
+  <circle cx="74" cy="98" r="4.5" fill="#BF360C"/>
+
+  <!-- Subtle shading for bevel (top left highlight, bottom right shadow) -->
+  <path d="M8,32 Q8,8 32,8" stroke="#FFD8B7" stroke-width="5" fill="none"/>
+  <path d="M120,96 Q120,120 96,120" stroke="#B71C1C" stroke-width="7" fill="none"/>
+</svg>

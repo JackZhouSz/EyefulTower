@@ -1,0 +1,3 @@
+ouster_module:
+  launch: "ouster_ros driver.launch.py params_file:=/home/pal/deployed_ws/meta_ouster_config/share/meta_ouster_config/config/driver_params.yaml viz:=false"
+  waits: ["ouster_wait_module"]

@@ -1,0 +1,9 @@
+[gd_resource type="GradientTexture2D" load_steps=2 format=3 uid="uid://n7c6bveg6rrw"]
+
+[sub_resource type="Gradient" id="Gradient_bilxi"]
+
+[resource]
+gradient = SubResource("Gradient_bilxi")
+width = 600
+height = 550
+fill_to = Vector2(0, 0.0137615)

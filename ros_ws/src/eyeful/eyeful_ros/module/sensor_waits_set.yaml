@@ -1,0 +1,2 @@
+sensor_set:
+  - ouster_wait_module

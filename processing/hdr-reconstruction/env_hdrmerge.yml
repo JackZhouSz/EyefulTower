@@ -1,0 +1,20 @@
+name: hdrmerge-env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+  - nvidia
+dependencies:
+  - python=3.11
+  - einops=0.4.1
+  - exifread=3.0.0
+  - ipython=8.4.0
+  - matplotlib=3.10.8
+  - omegaconf=2.3.0
+  - numpy=2.4.1
+  - opencv=4.12.0
+  - nomkl=1.0
+  - pytorch=2.7.1
+  - torchvision=0.22.1
+  - tqdm=4.64.0
+  - pip=25.3

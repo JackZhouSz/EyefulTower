@@ -1,0 +1,2 @@
+/docs/cad/EyefulRobot.STEP filter=lfs diff=lfs merge=lfs -text
+/docs/cad/EyefulRobot.zip filter=lfs diff=lfs merge=lfs -text

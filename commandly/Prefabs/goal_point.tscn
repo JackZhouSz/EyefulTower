@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhr8xgfl1dnjk"]
+
+[ext_resource type="Texture2D" uid="uid://bvo63ib2dpjqh" path="res://Images/goal_point.png" id="1_bw4uy"]
+
+[node name="GoalPoint" type="Sprite2D"]
+texture = ExtResource("1_bw4uy")

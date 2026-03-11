@@ -1,0 +1,10 @@
+# This is needed because for some reason, on boot the xsense driver gets the wrong baud.
+# Waits did not fix it, it seems like the first attempt to get the right baud will always
+# be wrong. Online I have seen this could be a USB issue and not a driver issue.
+# This first module will exit, and then trigger the 2nd one, which will start.
+xsens_module_sacrifice:
+  launch: "xsens_mti_ros2_driver xsens_mti_node.launch.py"
+  finishes: True
+xsens_module:
+  launch: "xsens_mti_ros2_driver xsens_mti_node.launch.py"
+  waits: ["xsens_module_sacrifice"]

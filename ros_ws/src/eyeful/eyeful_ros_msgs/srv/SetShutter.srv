@@ -1,0 +1,5 @@
+string shutter
+int32 batch_id      # Which part of the batch capture it is on (0 for first, 1 for second)
+---
+int32 success
+string message

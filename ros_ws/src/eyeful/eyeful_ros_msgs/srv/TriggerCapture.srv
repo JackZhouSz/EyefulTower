@@ -1,0 +1,4 @@
+bool move_forward
+---
+int32 success
+string message

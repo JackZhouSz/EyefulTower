@@ -1,0 +1,4 @@
+eyeful_set:
+  - eyeful_ros_module
+  - realsens_module
+  - eyeful_imu_module

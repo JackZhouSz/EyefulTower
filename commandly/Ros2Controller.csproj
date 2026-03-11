@@ -1,0 +1,12 @@
+<Project Sdk="Godot.NET.Sdk/4.5.1">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Siemens.RosSharp.MessageGeneration" Version="2.1.0" />
+    <PackageReference Include="Siemens.RosSharp.RosBridgeClient.ROS2" Version="2.1.0" />
+    <PackageReference Include="Siemens.RosSharp.Urdf" Version="2.1.0" />
+    <PackageReference Include="SSH.NET" Version="2025.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+eyeful_ros_module:
+  run: "eyeful_ros pal_controller"
+realsens_module:
+  launch: "realsense2_camera rs_launch.py enable_infra1:=false enable_infra2:=false color_qos:='SYSTEM_DEFAULT' color_info_qos:='SYSTEM_DEFAULT' enable_depth:=false rgb_camera.color_profile:='320x180x6'"
+eyeful_imu_module:
+  run: "eyeful_ros imu_validator"
+  after: ["ouster_module", "xsens_module"]

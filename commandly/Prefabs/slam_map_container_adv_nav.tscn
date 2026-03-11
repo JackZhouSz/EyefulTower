@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://mofw6u775xok"]
+
+[ext_resource type="Script" uid="uid://cplyklso4dc3p" path="res://Scripts/UI/SlamMapContainer.cs" id="1_v7pxo"]
+[ext_resource type="Texture2D" uid="uid://da4278p1w43xa" path="res://Textures/slam_map_container_adv_nav.tres" id="2_63ye2"]
+[ext_resource type="Script" uid="uid://cafk4v1glxhxk" path="res://Scripts/UI/SlamMapTexture.cs" id="3_1prvy"]
+[ext_resource type="PackedScene" uid="uid://bhr8xgfl1dnjk" path="res://Prefabs/goal_point.tscn" id="4_fyujd"]
+[ext_resource type="Texture2D" uid="uid://wgovl8p0d3rk" path="res://Images/robot_tex_dir.png" id="5_uc8rh"]
+
+[node name="SlamMapContainer" type="ScrollContainer" node_paths=PackedStringArray("SlamMap")]
+custom_minimum_size = Vector2(600, 550)
+script = ExtResource("1_v7pxo")
+SlamMap = NodePath("SlamMap/MapTexture")
+SlamMapTexture = ExtResource("2_63ye2")
+
+[node name="SlamMap" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(900, 550)
+layout_mode = 2
+theme_override_constants/margin_top = 20
+
+[node name="MapTexture" type="TextureRect" parent="SlamMap" node_paths=PackedStringArray("RobotSprite")]
+layout_mode = 2
+size_flags_vertical = 0
+tooltip_text = "The map of obstacles detected by the robot"
+texture = ExtResource("2_63ye2")
+stretch_mode = 2
+script = ExtResource("3_1prvy")
+RobotSprite = NodePath("RobotSprite")
+GoalPointPrefab = ExtResource("4_fyujd")
+
+[node name="RobotSprite" type="Sprite2D" parent="SlamMap/MapTexture"]
+position = Vector2(252, 211)
+texture = ExtResource("5_uc8rh")
