@@ -1,4 +1,4 @@
-# (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
+# Copyright (c) Meta Platforms, Inc. and affiliates.
 
 """Post-processing pipeline - white balance, downscaling, JPEG export, Metashape, and COLMAP."""
 

@@ -1,3 +1,5 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
 int64 drive_mode    # Drive mode type
 int32 batch_id      # Which part of the batch capture it is on (0 for first, 1 for second)
 ---

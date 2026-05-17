@@ -1,3 +1,4 @@
+<!-- Copyright (c) Meta Platforms, Inc. and affiliates. -->
 <Project Sdk="Godot.NET.Sdk/4.4.2-rc">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>

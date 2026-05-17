@@ -1,3 +1,5 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+
 #goal definition
 geometry_msgs/Pose pose
 ---

@@ -1,4 +1,4 @@
-# (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
+# Copyright (c) Meta Platforms, Inc. and affiliates.
 
 #Set minimum required CMake version and project name.
 cmake_minimum_required(VERSION 3.5)
